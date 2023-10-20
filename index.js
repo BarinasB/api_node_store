@@ -10,6 +10,9 @@ const port = 3000;
 app.use(express.json());
 app.use(cors())
 
+app.get('/', (req, res) => {
+  res.send('Hola mi server en express');
+});
 
 
 app.listen(port, () =>{
